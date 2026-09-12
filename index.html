@@ -51,12 +51,7 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
 
   // If the count down is finished, write some text 
-  if (distance < 0) 
-  { 
-    
-    document.getElementById("demo").innerHTML = "Yay! we are together! if not, call me:)"; 
-    return; 
-  }
+  
 
   // Time calculations for days, hours, minutes and seconds
   //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -69,4 +64,9 @@ var x = setInterval(function() {
   //+ minutes + "m " + seconds + "s ";
   document.getElementById("demo").innerHTML = hours + "h " + minutes + "m " + seconds + "
 }, 1000);
+  if (distance < 0) 
+  { 
+    document.getElementById("demo").innerHTML = "Yay! we are together! if not, call me:)"; 
+    return; 
+  }
 </script>
